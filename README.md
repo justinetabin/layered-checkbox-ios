@@ -1,4 +1,6 @@
 # LayeredCheckbox
+[![Build Status](https://travis-ci.com/justinetabin/layered-checkbox-ios.svg?branch=master)](https://travis-ci.com/justinetabin/layered-checkbox-ios)
+[![codecov](https://codecov.io/gh/justinetabin/layered-checkbox-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/justinetabin/layered-checkbox-ios)
 
 An example app of 3 level and 3 states check boxes.
 
