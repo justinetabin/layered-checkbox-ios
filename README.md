@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.com/justinetabin/layered-checkbox-ios.svg?branch=master)](https://travis-ci.com/justinetabin/layered-checkbox-ios)
 [![codecov](https://codecov.io/gh/justinetabin/layered-checkbox-ios/branch/master/graph/badge.svg)](https://codecov.io/gh/justinetabin/layered-checkbox-ios)
 
-An example app of 3 levels and 3 states checkboxes.
+An example app of 3 levels with 3 states checkboxes.
 
 ### Layers
 - `L1`: This will be the top most level. It will have `L2` & `L3` as Childs hence maintain its state based upon Childs selections. 
