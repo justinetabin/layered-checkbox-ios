@@ -1,0 +1,7 @@
+language: swift
+xcode_workspace: LayeredCheckbox.xcworkspace
+xcode_scheme: LayeredCheckbox
+xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro Max
+osx_image: xcode11.3
+after_success:
+ - bash <(curl -s https://codecov.io/bash)

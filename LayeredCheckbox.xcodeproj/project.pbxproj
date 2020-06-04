@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81C36C4026AEAA4E1F1A23E9 /* Pods_LayeredCheckboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E679B7581E0D177A2FE505C /* Pods_LayeredCheckboxTests.framework */; };
+		CF5F0542248868950028D6E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F0541248868950028D6E4 /* AppDelegate.swift */; };
+		CF5F0544248868950028D6E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F0543248868950028D6E4 /* SceneDelegate.swift */; };
+		CF5F0546248868950028D6E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F0545248868950028D6E4 /* ViewController.swift */; };
+		CF5F0549248868950028D6E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5F0547248868950028D6E4 /* Main.storyboard */; };
+		CF5F054B248868970028D6E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF5F054A248868970028D6E4 /* Assets.xcassets */; };
+		CF5F054E248868970028D6E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5F054C248868970028D6E4 /* LaunchScreen.storyboard */; };
+		CF5F0559248868980028D6E4 /* LayeredCheckboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F0558248868980028D6E4 /* LayeredCheckboxTests.swift */; };
+		CF5F056B248869800028D6E4 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F056A248869800028D6E4 /* Section.swift */; };
+		CF5F056D248869860028D6E4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F056C248869860028D6E4 /* Item.swift */; };
+		CF5F056F24886A6A0028D6E4 /* SectionMemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F056E24886A6A0028D6E4 /* SectionMemStore.swift */; };
+		CF5F057124886A810028D6E4 /* SectionsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F057024886A810028D6E4 /* SectionsWorker.swift */; };
+		CF5F057324886A8E0028D6E4 /* DependencyWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F057224886A8E0028D6E4 /* DependencyWorker.swift */; };
+		CF5F057724886B380028D6E4 /* ListSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F057624886B380028D6E4 /* ListSectionsViewController.swift */; };
+		CF5F057924886B4A0028D6E4 /* LayerOneTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F057824886B4A0028D6E4 /* LayerOneTableHeaderView.swift */; };
+		CF5F057B24886B5E0028D6E4 /* LayerTwoSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F057A24886B5E0028D6E4 /* LayerTwoSectionHeaderView.swift */; };
+		CF5F057D24886B690028D6E4 /* LayerThreeCheckBoxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F057C24886B690028D6E4 /* LayerThreeCheckBoxTableViewCell.swift */; };
+		CF5F057F24886B830028D6E4 /* ListSectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F057E24886B830028D6E4 /* ListSectionsViewModel.swift */; };
+		CF5F058124886BD20028D6E4 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F058024886BD20028D6E4 /* ViewModelType.swift */; };
+		CF5F058324886BDF0028D6E4 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F058224886BDF0028D6E4 /* CheckBox.swift */; };
+		CF5F058524886BE80028D6E4 /* CheckBox+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F058424886BE80028D6E4 /* CheckBox+States.swift */; };
+		CF5F058924886DC30028D6E4 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F058824886DC30028D6E4 /* Mocks.swift */; };
+		CF5F058D24886E1A0028D6E4 /* ListSectionsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F058C24886E1A0028D6E4 /* ListSectionsViewControllerTests.swift */; };
+		CF5F058F24886E7F0028D6E4 /* ListSectionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F058E24886E7F0028D6E4 /* ListSectionsViewModelTests.swift */; };
+		CF5F059124886F150028D6E4 /* SectionMemStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F059024886F150028D6E4 /* SectionMemStoreTests.swift */; };
+		CF5F0594248870940028D6E4 /* SectionsWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F0593248870940028D6E4 /* SectionsWorkerTests.swift */; };
+		FE92DA3E8D563051E65C695F /* Pods_LayeredCheckbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A642C924145383F193C55934 /* Pods_LayeredCheckbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF5F0555248868980028D6E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF5F0536248868950028D6E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF5F053D248868950028D6E4;
+			remoteInfo = LayeredCheckbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E679B7581E0D177A2FE505C /* Pods_LayeredCheckboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayeredCheckboxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F0204298A17AA7F0C62530 /* Pods-LayeredCheckboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayeredCheckboxTests.release.xcconfig"; path = "Target Support Files/Pods-LayeredCheckboxTests/Pods-LayeredCheckboxTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E429D92CC8D853F2AC0C7E4 /* Pods-LayeredCheckboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayeredCheckboxTests.debug.xcconfig"; path = "Target Support Files/Pods-LayeredCheckboxTests/Pods-LayeredCheckboxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A642C924145383F193C55934 /* Pods_LayeredCheckbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LayeredCheckbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA545FCACA12AE6B863F5B1 /* Pods-LayeredCheckbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayeredCheckbox.release.xcconfig"; path = "Target Support Files/Pods-LayeredCheckbox/Pods-LayeredCheckbox.release.xcconfig"; sourceTree = "<group>"; };
+		CF5F053E248868950028D6E4 /* LayeredCheckbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayeredCheckbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5F0541248868950028D6E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF5F0543248868950028D6E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF5F0545248868950028D6E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF5F0548248868950028D6E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF5F054A248868970028D6E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF5F054D248868970028D6E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF5F054F248868970028D6E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF5F0554248868980028D6E4 /* LayeredCheckboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayeredCheckboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5F0558248868980028D6E4 /* LayeredCheckboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayeredCheckboxTests.swift; sourceTree = "<group>"; };
+		CF5F055A248868980028D6E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF5F056A248869800028D6E4 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		CF5F056C248869860028D6E4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CF5F056E24886A6A0028D6E4 /* SectionMemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionMemStore.swift; sourceTree = "<group>"; };
+		CF5F057024886A810028D6E4 /* SectionsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsWorker.swift; sourceTree = "<group>"; };
+		CF5F057224886A8E0028D6E4 /* DependencyWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyWorker.swift; sourceTree = "<group>"; };
+		CF5F057624886B380028D6E4 /* ListSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionsViewController.swift; sourceTree = "<group>"; };
+		CF5F057824886B4A0028D6E4 /* LayerOneTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerOneTableHeaderView.swift; sourceTree = "<group>"; };
+		CF5F057A24886B5E0028D6E4 /* LayerTwoSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerTwoSectionHeaderView.swift; sourceTree = "<group>"; };
+		CF5F057C24886B690028D6E4 /* LayerThreeCheckBoxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerThreeCheckBoxTableViewCell.swift; sourceTree = "<group>"; };
+		CF5F057E24886B830028D6E4 /* ListSectionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionsViewModel.swift; sourceTree = "<group>"; };
+		CF5F058024886BD20028D6E4 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		CF5F058224886BDF0028D6E4 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		CF5F058424886BE80028D6E4 /* CheckBox+States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CheckBox+States.swift"; sourceTree = "<group>"; };
+		CF5F058824886DC30028D6E4 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		CF5F058C24886E1A0028D6E4 /* ListSectionsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionsViewControllerTests.swift; sourceTree = "<group>"; };
+		CF5F058E24886E7F0028D6E4 /* ListSectionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionsViewModelTests.swift; sourceTree = "<group>"; };
+		CF5F059024886F150028D6E4 /* SectionMemStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionMemStoreTests.swift; sourceTree = "<group>"; };
+		CF5F0593248870940028D6E4 /* SectionsWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsWorkerTests.swift; sourceTree = "<group>"; };
+		D9CFB2104056A2F283D4F01D /* Pods-LayeredCheckbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LayeredCheckbox.debug.xcconfig"; path = "Target Support Files/Pods-LayeredCheckbox/Pods-LayeredCheckbox.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF5F053B248868950028D6E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE92DA3E8D563051E65C695F /* Pods_LayeredCheckbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5F0551248868980028D6E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C36C4026AEAA4E1F1A23E9 /* Pods_LayeredCheckboxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83BDAD11251D18E3A5098AE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A642C924145383F193C55934 /* Pods_LayeredCheckbox.framework */,
+				0E679B7581E0D177A2FE505C /* Pods_LayeredCheckboxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3A756F83964B7B9113CDD3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9CFB2104056A2F283D4F01D /* Pods-LayeredCheckbox.debug.xcconfig */,
+				CEA545FCACA12AE6B863F5B1 /* Pods-LayeredCheckbox.release.xcconfig */,
+				8E429D92CC8D853F2AC0C7E4 /* Pods-LayeredCheckboxTests.debug.xcconfig */,
+				88F0204298A17AA7F0C62530 /* Pods-LayeredCheckboxTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF5F0535248868950028D6E4 = {
+			isa = PBXGroup;
+			children = (
+				CF5F0540248868950028D6E4 /* LayeredCheckbox */,
+				CF5F0557248868980028D6E4 /* LayeredCheckboxTests */,
+				CF5F053F248868950028D6E4 /* Products */,
+				A3A756F83964B7B9113CDD3A /* Pods */,
+				83BDAD11251D18E3A5098AE2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF5F053F248868950028D6E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F053E248868950028D6E4 /* LayeredCheckbox.app */,
+				CF5F0554248868980028D6E4 /* LayeredCheckboxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF5F0540248868950028D6E4 /* LayeredCheckbox */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F0563248868AF0028D6E4 /* Application */,
+				CF5F0564248868B70028D6E4 /* Models */,
+				CF5F0565248868BE0028D6E4 /* Services */,
+				CF5F0566248868C60028D6E4 /* Workers */,
+				CF5F0567248868CB0028D6E4 /* Scenes */,
+				CF5F0568248868D20028D6E4 /* Common */,
+				CF5F0569248868D70028D6E4 /* Resources */,
+			);
+			path = LayeredCheckbox;
+			sourceTree = "<group>";
+		};
+		CF5F0557248868980028D6E4 /* LayeredCheckboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F058624886DAC0028D6E4 /* Services */,
+				CF5F0592248870850028D6E4 /* Workers */,
+				CF5F058724886DB10028D6E4 /* Scenes */,
+				CF5F058824886DC30028D6E4 /* Mocks.swift */,
+				CF5F0558248868980028D6E4 /* LayeredCheckboxTests.swift */,
+				CF5F055A248868980028D6E4 /* Info.plist */,
+			);
+			path = LayeredCheckboxTests;
+			sourceTree = "<group>";
+		};
+		CF5F0563248868AF0028D6E4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F0541248868950028D6E4 /* AppDelegate.swift */,
+				CF5F0543248868950028D6E4 /* SceneDelegate.swift */,
+				CF5F0545248868950028D6E4 /* ViewController.swift */,
+				CF5F0547248868950028D6E4 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CF5F0564248868B70028D6E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F056A248869800028D6E4 /* Section.swift */,
+				CF5F056C248869860028D6E4 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF5F0565248868BE0028D6E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F056E24886A6A0028D6E4 /* SectionMemStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF5F0566248868C60028D6E4 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F057024886A810028D6E4 /* SectionsWorker.swift */,
+				CF5F057224886A8E0028D6E4 /* DependencyWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		CF5F0567248868CB0028D6E4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F057524886AA60028D6E4 /* ListSections */,
+				CF5F057424886A9F0028D6E4 /* Utils */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CF5F0568248868D20028D6E4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CF5F0569248868D70028D6E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F054A248868970028D6E4 /* Assets.xcassets */,
+				CF5F054C248868970028D6E4 /* LaunchScreen.storyboard */,
+				CF5F054F248868970028D6E4 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF5F057424886A9F0028D6E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F058024886BD20028D6E4 /* ViewModelType.swift */,
+				CF5F058224886BDF0028D6E4 /* CheckBox.swift */,
+				CF5F058424886BE80028D6E4 /* CheckBox+States.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CF5F057524886AA60028D6E4 /* ListSections */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F057624886B380028D6E4 /* ListSectionsViewController.swift */,
+				CF5F057E24886B830028D6E4 /* ListSectionsViewModel.swift */,
+				CF5F057824886B4A0028D6E4 /* LayerOneTableHeaderView.swift */,
+				CF5F057A24886B5E0028D6E4 /* LayerTwoSectionHeaderView.swift */,
+				CF5F057C24886B690028D6E4 /* LayerThreeCheckBoxTableViewCell.swift */,
+			);
+			path = ListSections;
+			sourceTree = "<group>";
+		};
+		CF5F058624886DAC0028D6E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F059024886F150028D6E4 /* SectionMemStoreTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF5F058724886DB10028D6E4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F058A24886DEC0028D6E4 /* ListSections */,
+				CF5F058B24886DF70028D6E4 /* Utils */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CF5F058A24886DEC0028D6E4 /* ListSections */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F058C24886E1A0028D6E4 /* ListSectionsViewControllerTests.swift */,
+				CF5F058E24886E7F0028D6E4 /* ListSectionsViewModelTests.swift */,
+			);
+			path = ListSections;
+			sourceTree = "<group>";
+		};
+		CF5F058B24886DF70028D6E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CF5F0592248870850028D6E4 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				CF5F0593248870940028D6E4 /* SectionsWorkerTests.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF5F053D248868950028D6E4 /* LayeredCheckbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF5F055D248868980028D6E4 /* Build configuration list for PBXNativeTarget "LayeredCheckbox" */;
+			buildPhases = (
+				82A5E746513B4C9EBF3A7AC2 /* [CP] Check Pods Manifest.lock */,
+				CF5F053A248868950028D6E4 /* Sources */,
+				CF5F053B248868950028D6E4 /* Frameworks */,
+				CF5F053C248868950028D6E4 /* Resources */,
+				CD4ACF361E6014D1C2C3961E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LayeredCheckbox;
+			productName = LayeredCheckbox;
+			productReference = CF5F053E248868950028D6E4 /* LayeredCheckbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF5F0553248868980028D6E4 /* LayeredCheckboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF5F0560248868980028D6E4 /* Build configuration list for PBXNativeTarget "LayeredCheckboxTests" */;
+			buildPhases = (
+				5FAB144834AEB2F19EC0940E /* [CP] Check Pods Manifest.lock */,
+				CF5F0550248868980028D6E4 /* Sources */,
+				CF5F0551248868980028D6E4 /* Frameworks */,
+				CF5F0552248868980028D6E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF5F0556248868980028D6E4 /* PBXTargetDependency */,
+			);
+			name = LayeredCheckboxTests;
+			productName = LayeredCheckboxTests;
+			productReference = CF5F0554248868980028D6E4 /* LayeredCheckboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF5F0536248868950028D6E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Justine Tabin";
+				TargetAttributes = {
+					CF5F053D248868950028D6E4 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					CF5F0553248868980028D6E4 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CF5F053D248868950028D6E4;
+					};
+				};
+			};
+			buildConfigurationList = CF5F0539248868950028D6E4 /* Build configuration list for PBXProject "LayeredCheckbox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF5F0535248868950028D6E4;
+			productRefGroup = CF5F053F248868950028D6E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF5F053D248868950028D6E4 /* LayeredCheckbox */,
+				CF5F0553248868980028D6E4 /* LayeredCheckboxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF5F053C248868950028D6E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5F054E248868970028D6E4 /* LaunchScreen.storyboard in Resources */,
+				CF5F054B248868970028D6E4 /* Assets.xcassets in Resources */,
+				CF5F0549248868950028D6E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5F0552248868980028D6E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FAB144834AEB2F19EC0940E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LayeredCheckboxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82A5E746513B4C9EBF3A7AC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LayeredCheckbox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD4ACF361E6014D1C2C3961E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LayeredCheckbox/Pods-LayeredCheckbox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LayeredCheckbox/Pods-LayeredCheckbox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LayeredCheckbox/Pods-LayeredCheckbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF5F053A248868950028D6E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5F056D248869860028D6E4 /* Item.swift in Sources */,
+				CF5F056F24886A6A0028D6E4 /* SectionMemStore.swift in Sources */,
+				CF5F057324886A8E0028D6E4 /* DependencyWorker.swift in Sources */,
+				CF5F0546248868950028D6E4 /* ViewController.swift in Sources */,
+				CF5F057724886B380028D6E4 /* ListSectionsViewController.swift in Sources */,
+				CF5F057924886B4A0028D6E4 /* LayerOneTableHeaderView.swift in Sources */,
+				CF5F058524886BE80028D6E4 /* CheckBox+States.swift in Sources */,
+				CF5F058124886BD20028D6E4 /* ViewModelType.swift in Sources */,
+				CF5F057F24886B830028D6E4 /* ListSectionsViewModel.swift in Sources */,
+				CF5F057B24886B5E0028D6E4 /* LayerTwoSectionHeaderView.swift in Sources */,
+				CF5F057D24886B690028D6E4 /* LayerThreeCheckBoxTableViewCell.swift in Sources */,
+				CF5F057124886A810028D6E4 /* SectionsWorker.swift in Sources */,
+				CF5F056B248869800028D6E4 /* Section.swift in Sources */,
+				CF5F0542248868950028D6E4 /* AppDelegate.swift in Sources */,
+				CF5F0544248868950028D6E4 /* SceneDelegate.swift in Sources */,
+				CF5F058324886BDF0028D6E4 /* CheckBox.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5F0550248868980028D6E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5F058F24886E7F0028D6E4 /* ListSectionsViewModelTests.swift in Sources */,
+				CF5F0594248870940028D6E4 /* SectionsWorkerTests.swift in Sources */,
+				CF5F058D24886E1A0028D6E4 /* ListSectionsViewControllerTests.swift in Sources */,
+				CF5F0559248868980028D6E4 /* LayeredCheckboxTests.swift in Sources */,
+				CF5F058924886DC30028D6E4 /* Mocks.swift in Sources */,
+				CF5F059124886F150028D6E4 /* SectionMemStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF5F0556248868980028D6E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF5F053D248868950028D6E4 /* LayeredCheckbox */;
+			targetProxy = CF5F0555248868980028D6E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF5F0547248868950028D6E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF5F0548248868950028D6E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF5F054C248868970028D6E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF5F054D248868970028D6E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF5F055B248868980028D6E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF5F055C248868980028D6E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF5F055E248868980028D6E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9CFB2104056A2F283D4F01D /* Pods-LayeredCheckbox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6VV562X6R;
+				INFOPLIST_FILE = LayeredCheckbox/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinetabin.LayeredCheckbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF5F055F248868980028D6E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEA545FCACA12AE6B863F5B1 /* Pods-LayeredCheckbox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6VV562X6R;
+				INFOPLIST_FILE = LayeredCheckbox/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinetabin.LayeredCheckbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF5F0561248868980028D6E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E429D92CC8D853F2AC0C7E4 /* Pods-LayeredCheckboxTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6VV562X6R;
+				INFOPLIST_FILE = LayeredCheckboxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinetabin.LayeredCheckboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LayeredCheckbox.app/LayeredCheckbox";
+			};
+			name = Debug;
+		};
+		CF5F0562248868980028D6E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88F0204298A17AA7F0C62530 /* Pods-LayeredCheckboxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6VV562X6R;
+				INFOPLIST_FILE = LayeredCheckboxTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinetabin.LayeredCheckboxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LayeredCheckbox.app/LayeredCheckbox";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF5F0539248868950028D6E4 /* Build configuration list for PBXProject "LayeredCheckbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5F055B248868980028D6E4 /* Debug */,
+				CF5F055C248868980028D6E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF5F055D248868980028D6E4 /* Build configuration list for PBXNativeTarget "LayeredCheckbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5F055E248868980028D6E4 /* Debug */,
+				CF5F055F248868980028D6E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF5F0560248868980028D6E4 /* Build configuration list for PBXNativeTarget "LayeredCheckboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5F0561248868980028D6E4 /* Debug */,
+				CF5F0562248868980028D6E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF5F0536248868950028D6E4 /* Project object */;
+}
